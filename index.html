@@ -1,330 +1,898 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Behance Project</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
     <header class="py-4 px-6 flex justify-between border border-b-[#dddddd]">
-        <div class="flex items-center gap-6">
-            <div>
-                <img src="./images/logo.svg" alt="logo">
-            </div>
-            <ul class="flex gap-6 items-center">
-                <li><a class="text-[15px] font-bold" href="#">For You</a></li>
-                <li><a class="text-[15px] font-bold" href="#">Discover</a></li>
-                <li><a class="text-[15px] font-bold" href="#">Livestreams</a></li>
-                <li><a class="text-[15px] font-bold" href="#">Hire</a></li>
-                <li><a class="text-[15px] font-bold" href="#">Jobs</a></li>
-            </ul>
-        </div>
+      <div class="flex items-center gap-6">
         <div>
-            <div class="buttons flex">
-                <div class="loging_or_signup flex gap-2 border-r border-[#dddddd] pr-4">
-                    <button class="border border-[#DEE8FF] rounded-full px-[21px] py-[10px] bg-[F5F8FF] text-[13px] text-[#0057FF] font-bold">Log In</button>
-                    <button class="bg-[#0057FF] text-[13px] rounded-full text-[#ffffff] font-bold px-[21px] py-[10px]">Sign Up</button>
-                </div>
-
-                <div class="adobe_icons flex gap-[15px] items-center ml-[15px]">
-                    <div class="flex items-center gap-2 border border-[#E8E8E8] px-[19px] py-[10px] rounded-full">
-                        <div>
-                            <img src="./images/free_trial.svg" alt="icons">
-                        </div>
-                        <h2 class="font-bold text-[13px]">free Trial</h2>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="./images/adobe.svg" alt="icons">
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <img src="./images/logo.svg" alt="logo" />
         </div>
+        <ul class="flex gap-6 items-center">
+          <li><a class="text-[15px] font-bold" href="#">For You</a></li>
+          <li><a class="text-[15px] font-bold" href="#">Discover</a></li>
+          <li><a class="text-[15px] font-bold" href="#">Livestreams</a></li>
+          <li><a class="text-[15px] font-bold" href="#">Hire</a></li>
+          <li><a class="text-[15px] font-bold" href="#">Jobs</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="buttons flex">
+          <div
+            class="loging_or_signup flex gap-2 border-r border-[#dddddd] pr-4"
+          >
+            <button
+              class="border border-[#DEE8FF] rounded-full px-[21px] py-[10px] bg-[F5F8FF] text-[13px] text-[#0057FF] font-bold"
+            >
+              Log In
+            </button>
+            <button
+              class="bg-[#0057FF] text-[13px] rounded-full text-[#ffffff] font-bold px-[21px] py-[10px]"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div class="adobe_icons flex gap-[15px] items-center ml-[15px]">
+            <div
+              class="flex items-center gap-2 border border-[#E8E8E8] px-[19px] py-[10px] rounded-full"
+            >
+              <div>
+                <img src="./images/free_trial.svg" alt="icons" />
+              </div>
+              <h2 class="font-bold text-[13px]">free Trial</h2>
+            </div>
+            <div>
+              <div>
+                <img src="./images/adobe.svg" alt="icons" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <nav class="px-6 py-6">
-        <div class="grid grid-cols-[1fr_auto] border border-[#CCCCCC] rounded-full overflow-hidden">
-            <div class="bg-[#F9F9F9] py-[10px] px-[17px]">
-                <form action="" class="grid grid-cols-[23px_1fr] items-center gap-3">
-                    <button class="cursor-pointer">
-                        <img src="./images/icons/search_icon.svg" alt="icons">
-                    </button>
-                    <input class="outline-none bg-transparent leading-normal placeholder:text-[#696969] text-[22px] font-bold" type="search" placeholder="Search the creative world at work">
-                </form>
-            </div>
-            <!-- Right sight -->
-            <div class="py-[10px] px-[17px] border-l border-l-[#cccccc] flex items-center">
-                <ul class="flex gap-2">
-                    <li class="active"><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">Projects</a></li>
-                    <li><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">Images</a></li>
-                    <li><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">Prototypes</a></li>
-                    <li><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">Streams</a></li>
-                    <li><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">People</a></li>
-                    <li><a class=" inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all" href="#">Moodboards</a></li>
-                </ul>
-            </div>
+      <div
+        class="grid grid-cols-[1fr_auto] border border-[#CCCCCC] rounded-full overflow-hidden"
+      >
+        <div class="bg-[#F9F9F9] py-[10px] px-[17px]">
+          <form action="" class="grid grid-cols-[23px_1fr] items-center gap-3">
+            <button class="cursor-pointer">
+              <img src="./images/icons/search_icon.svg" alt="icons" />
+            </button>
+            <input
+              class="outline-none bg-transparent leading-normal placeholder:text-[#696969] text-[22px] font-bold"
+              type="search"
+              placeholder="Search the creative world at work"
+            />
+          </form>
         </div>
+        <!-- Right sight -->
+        <div
+          class="py-[10px] px-[17px] border-l border-l-[#cccccc] flex items-center"
+        >
+          <ul class="flex gap-2">
+            <li class="active">
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >Images</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >Prototypes</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >Streams</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >People</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block rounded-full py-[6px] px-3 bg-white text-black hover:bg-black hover:text-white transition-all"
+                href="#"
+                >Moodboards</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <nav class="mb-[22px] mx-6">
-        <div class="flex justify-between">
-            <div>
-                <div class="flex gap-5 items-center">
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/first_icon.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Creative Fields</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-    
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/icons_2.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Tools</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-    
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/Icons_3.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Color</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-    
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/Icons_4.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Location</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-    
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/Icons_5.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Schools</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/Icons_6.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Assets</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2">
-                        <div>
-                            <img src="./images/icons/Icons_7.svg" alt="icons">
-                        </div>
-                        <h3 class="text-[13px] font-bold">Subscriptions</h3>
-                        <div>
-                            <img src="./images/icons/drop_down.svg" alt="icons">
-                        </div>
-                    </div>
-                </div>
+      <div class="flex justify-between">
+        <div>
+          <div class="flex gap-5 items-center">
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/first_icon.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Creative Fields</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
             </div>
 
-            <div>
-                <p class="text-[#696969] text-3 ">sort</p>
-                <p class="flex items-center gap-2 text-[13px]">Recommended
-                    <span>
-                        <img src="./images/icons/drop_down.svg" alt="icons">
-                    </span>
-                </p>
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/icons_2.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Tools</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
             </div>
+
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/Icons_3.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Color</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/Icons_4.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Location</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/Icons_5.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Schools</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/Icons_6.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Assets</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-[9px] border border=[#E8E8E8] px-3 py-2"
+            >
+              <div>
+                <img src="./images/icons/Icons_7.svg" alt="icons" />
+              </div>
+              <h3 class="text-[13px] font-bold">Subscriptions</h3>
+              <div>
+                <img src="./images/icons/drop_down.svg" alt="icons" />
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div>
+          <p class="text-[#696969] text-3">sort</p>
+          <p class="flex items-center gap-2 text-[13px]">
+            Recommended
+            <span>
+              <img src="./images/icons/drop_down.svg" alt="icons" />
+            </span>
+          </p>
+        </div>
+      </div>
     </nav>
 
     <!-- =============
      Main Content
      ================= -->
-     <section class="px-6">
-        <div class="grid grid-cols-4 gap-5">
-            <div>
-                <div class="rounded-[4px]">
-                    <img class="w-full object-cover overflow-hidden" src="./images/item_1.jpg" alt="items">
-                </div>
-                <div class="flex items-start justify-between">
-                    <div class="pt-[7px]">
-                        <h3 class="text-[14px] font-bold">2d Arcade style experiments</h3>
-                        <p class="text-[12px]">ARCADE STUDIO</p>
-                    </div>
-    
-                    <div class="flex items-center gap-[14px]"> 
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/like.svg" alt="like">
-                            <p>95</p>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/eye.svg" alt="like">
-                            <p>616</p>
-                        </div>
-                    </div>
-                </div>
+    <section class="px-6">
+      <div class="grid grid-cols-4 gap-5">
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_1.jpg"
+              alt="items"
+            />
+          </div>
+
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">2d Arcade style experiments</h3>
+              <p class="text-[12px]">ARCADE STUDIO</p>
             </div>
 
-            <div>
-                <div class="rounded-[4px]">
-                    <img class="w-full object-cover overflow-hidden" src="./images/item_2.jpg" alt="items">
-                </div>
-                <div class="flex items-start justify-between">
-                    <div class="pt-[7px]">
-                        <h3 class="text-[14px] font-bold">Fashion Illustration Vol.22</h3>
-                        <p class="text-[12px]">SEUNGWON HONG</p>
-                    </div>
-    
-                    <div class="flex items-center gap-[14px]"> 
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/like.svg" alt="like">
-                            <p>187</p>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/eye.svg" alt="like">
-                            <p>2K</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>95</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>616</p>
+              </div>
             </div>
-
-            <div>
-                <div class="rounded-[4px]">
-                    <img class="w-full object-cover overflow-hidden" src="./images/items_3.jpg" alt="items">
-                </div>
-                <div class="flex items-start justify-between">
-                    <div class="pt-[7px]">
-                        <h3 class="text-[14px] font-bold">A search for mother</h3>
-                        <p class="text-[12px]">Bade Fuwa</p>
-                    </div>
-    
-                    <div class="flex items-center gap-[14px]"> 
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/like.svg" alt="like">
-                            <p>56</p>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/eye.svg" alt="like">
-                            <p>547</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="rounded-[4px]">
-                    <img class="w-full object-cover overflow-hidden" src="./images/items_4.jpg" alt="items">
-                </div>
-                <div class="flex items-start justify-between">
-                    <div class="pt-[7px]">
-                        <h3 class="text-[14px] font-bold">Cow Cow Cow!</h3>
-                        <p class="text-[12px]">Multiple Owners</p>
-                    </div>
-    
-                    <div class="flex items-center gap-[14px]"> 
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/like.svg" alt="like">
-                            <p>95</p>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <img src="./images/icons/eye.svg" alt="like">
-                            <p>616</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-     </section>
-     <!-- ===================
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_2.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Fashion Illustration Vol.22</h3>
+              <p class="text-[12px]">SEUNGWON HONG</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>187</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>2K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/items_3.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">A search for mother</h3>
+              <p class="text-[12px]">Bade Fuwa</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>56</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>547</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/items_4.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Cow Cow Cow!</h3>
+              <p class="text-[12px]">Multiple Owners</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>95</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>616</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================
       Creative Cloud Section
       ====================== -->
-      <section class="bg-[#F2F2F2] px-[30px] py-8 mt-5">
-        <div class="flex gap-[50px]">
-            <div class="min-w-[280px]">
-                <h2 class="text-[20px] font-bold pb-1">Create with Creative Cloud</h2>
-                <p class="text-[14px]">Whatever you want to create, Adobe Creative Cloud has what you need to make it amazing.</p>
-                <button class="px-[21px] py-[10px] bg-[#0057FF] rounded-full text-[#ffffff] text-[13px] mt-[30px]">See all plans</button>
+    <section class="mt-5 bg-[#F2F2F2] px-[30px] py-8">
+        <div class="mx-6 grid grid-cols-5 gap-6">
+          <div>
+            <h4 class="text-[19px] font-bold">Create with Creative Cloud</h4>
+            <p class="text-[14px] pt-2">Whatever you want to create, Adobe Creative Cloud has what you need to make it amazing.</p>
+            <button class="mt-[30px] px-5 py-[10px] bg-[#0057FF] text-[13px] text-white rounded-full">See all plans</button>
+          </div>
+
+          <div>
+            <div class="rounded overflow-hidden">
+              <img src="./images/creative_cloud.jpg" alt="images">
+            </div>
+            <div class="pt-[28px] grid grid-cols-[36px_1fr] gap-2">
+              <div>
+                <img src="./images/icons/creative_cloud_icon.svg" alt="icons">
+              </div>
+              <div>
+                <h4>Creative Cloud All Apps</h4>
+                <p>Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded overflow-hidden">
+              <img src="./images/photoshop.jpg" alt="images">
+            </div>
+            <div class="pt-[28px] grid grid-cols-[36px_1fr] gap-2">
+              <div>
+                <img src="./images/icons/photoshop_icon.svg" alt="icons">
+              </div>
+              <div>
+                <h4>Photoshop - Image editing & design</h4>
+                <p>Create beautiful images, graphics, paintings, and 3D artwork on your desktop or iPad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded overflow-hidden">
+              <img src="./images/illustrator.jpg" alt="images">
+            </div>
+            <div class="pt-[28px] grid grid-cols-[36px_1fr] gap-2">
+              <div>
+                <img src="./images/icons/illustrator_icon.svg" alt="icons">
+              </div>
+              <div>
+                <h4>Illustrator - Logos, icons & illustration</h4>
+                <p>Create beautiful designs, icons, and more — then use them anyplace at any size.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="rounded overflow-hidden">
+              <img src="./images/premiarpro.jpg" alt="images">
+            </div>
+            <div class="pt-[28px] grid grid-cols-[36px_1fr] gap-2">
+              <div>
+                <img src="./images/icons/premearpro_icon.svg" alt="icons">
+              </div>
+              <div>
+                <h4>Premiere Pro - Video editing</h4>
+                <p>Create everything from social clips to feature films with the leading video editor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="px-6 pt-[53px]">
+      <div class="grid grid-cols-4 gap-5">
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_5.jpg"
+              alt="items"
+            />
+          </div>
+          
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Onça</h3>
+              <p class="text-[12px]">Alejandro Gavancho</p>
             </div>
 
-            <div class="flex gap-4">
-                <div>
-                    <div>
-                        <img class="object-cover" src="./images/creative_cloud.jpg" alt="images">
-                    </div>
-    
-                    <div class="flex pt-7 gap-3">
-                        <div class="min-w-[36px]">
-                            <img src="./images/icons/creative_cloud_icon.svg" alt="icons">
-                        </div>
-                        <div>
-                            <h3 class="text-[13px] font-bold">Creative Cloud All Apps</h3>
-                            <p class="text-[12px]">Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./images/creative_cloud.jpg" alt="images">
-                    </div>
-    
-                    <div class="flex pt-7 gap-3">
-                        <div class="min-w-[36px]">
-                            <img src="./images/icons/creative_cloud_icon.svg" alt="icons">
-                        </div>
-                        <div>
-                            <h3 class="text-[13px] font-bold">Creative Cloud All Apps</h3>
-                            <p class="text-[12px]">Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./images/creative_cloud.jpg" alt="images">
-                    </div>
-    
-                    <div class="flex pt-7 gap-3">
-                        <div class="min-w-[36px]">
-                            <img src="./images/icons/creative_cloud_icon.svg" alt="icons">
-                        </div>
-                        <div>
-                            <h3 class="text-[13px] font-bold">Creative Cloud All Apps</h3>
-                            <p class="text-[12px]">Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="./images/creative_cloud.jpg" alt="images">
-                    </div>
-    
-                    <div class="flex pt-7 gap-3">
-                        <div class="min-w-[36px]">
-                            <img src="./images/icons/creative_cloud_icon.svg" alt="icons">
-                        </div>
-                        <div>
-                            <h3 class="text-[13px] font-bold">Creative Cloud All Apps</h3>
-                            <p class="text-[12px]">Easily create stunning social graphics, short videos, and web pages that make you stand out.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>95</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>456</p>
+              </div>
             </div>
+          </div>
         </div>
-      </section>
-</body>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_6.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">VARNE</h3>
+              <p class="text-[12px]">Mahmod Mowafy</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>96</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>231</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_7.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Sunday Best & Someday Studio for BEETL</h3>
+              <p class="text-[12px]">Multiple Owners</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>444</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>1K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_8.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">cool fish</h3>
+              <p class="text-[12px]">Johann Banta</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>245</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>786</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_9.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">NANTES MURAL</h3>
+              <p class="text-[12px]">OCU .</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>64</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>529</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_10.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">VOGUE ARABIA 2023</h3>
+              <p class="text-[12px]">Agnieszka Hoscilo</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>95</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>616</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_11.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">NEVER SETTLE – FREELETICS AD 2021</h3>
+              <p class="text-[12px]">Multiple Owners</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>617</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>5.5K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_12.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Arab Character Design</h3>
+              <p class="text-[12px]">serag basel™</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>336</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>1.8K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_13.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Bally Sports | MLB 2022</h3>
+              <p class="text-[12px]">|drive| studio</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>317</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>5.2K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_14.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">A digital heaven for perfume enthusiasts</h3>
+              <p class="text-[12px]">Vasava Studio</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>202</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>1.9K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_15.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Nestor Salinas</h3>
+              <p class="text-[12px]">Multiple Owners</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>2.4K</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>29.6K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_16.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Increment Magazine</h3>
+              <p class="text-[12px]">Myriam Wares</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>341</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>3.8K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_17.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Bagel - Metascale</h3>
+              <p class="text-[12px] flex items-center gap-1">Multiple Owners
+                <span>
+                  <img src="./images/icons/drop_down.svg" alt="icons">
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>95</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>616</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_18.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">Domo - Brand Identity</h3>
+              <p class="text-[12px] flex items-center gap-1">Multiple Owners
+                <span>
+                  <img src="./images/icons/drop_down.svg" alt="icons">
+                </span>
+              </p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>82</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>1.9K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_19.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">TV Show Duos</h3>
+              <p class="text-[12px]">Jovana Randjelovic</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>1K</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>13K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="rounded-[4px]">
+            <img
+              class="w-full object-cover overflow-hidden"
+              src="./images/item_20.jpg"
+              alt="items"
+            />
+          </div>
+          <div class="flex items-start justify-between">
+            <div class="pt-[7px]">
+              <h3 class="text-[14px] font-bold">ABCD Consulting</h3>
+              <p class="text-[12px]">Lissa Kravts</p>
+            </div>
+
+            <div class="flex items-center gap-[14px]">
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/like.svg" alt="like" />
+                <p>32</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="./images/icons/eye.svg" alt="like" />
+                <p>452</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-[35px] px-[30px] py-2 border-t border-t-[#E1E1E1]">
+      <div class="flex items-center justify-between"> 
+        <div class="flex gap-[27px]">
+          <div class="pr-[23px] border-r border-r-[#e1e1e1]">
+            <p class="flex items-center gap-2">More Behance
+              <span>
+                <img src="./images/icons/drop_down.svg" alt="icons">
+              </span>
+            </p>
+          </div>
+  
+          <div class="pr-[21px] border-r border-r-[#e1e1e1]">
+            <p class="flex items-center gap-2">English
+              <span>
+                <img src="./images/icons/drop_down.svg" alt="icons">
+              </span>
+            </p>
+          </div>
+
+          <ul class="flex gap-[10px] items-center">
+            <li><a href="#">TOU</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Cookie preferences</a></li>
+            <li><a href="#">Do not sell or share my personal information</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div>
+            <img src="./images/adobe.svg" alt="icons">
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </footer>
+  </body>
 </html>
